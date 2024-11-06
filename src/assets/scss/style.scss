@@ -1,0 +1,499 @@
+/* Reset CSS */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:focus-visible {
+  outline: 0px;
+}
+
+
+/* Font Faces */
+@font-face {
+  font-family: 'amazon-ember';
+  src: url('fonts/Amazon-Ember.ttf');
+}
+
+@font-face {
+  font-family: 'amazon-ember-bold';
+  src: url('fonts/Amazon-Ember-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'amazon-ember-light';
+  src: url('fonts/Amazon-Ember-Light.ttf');
+}
+
+
+/* Variables */
+$shadeblue: #566AE4;
+$main: #052440;
+$grey: rgb(217 217 217 / 40%);
+$lightgrey: rgba(244, 242, 239, 0.8);
+$lightblue: rgba(86, 106, 228);
+$darkblue: #24303F;
+
+
+/* Background Colors */
+.bg-shadeblue {
+  background-color: $shadeblue;
+}
+
+.bg-shadeblue:hover {
+  background-color: #093f94; 
+}
+
+.bg-main {
+  background-color: $main;
+}
+.bg-form {
+  background-color: $grey;
+}
+.bg-auth{
+  background-color: $lightgrey;
+}
+.bg-form:focus {
+  box-shadow: none;
+  background-color: $grey;
+}
+.lightblue{
+  color: $lightblue;
+}
+.darkblue{
+  color: $darkblue;
+}
+.btn:active {
+  background-color: #00000069!important;
+}
+.shadeblue{
+  color: $shadeblue;
+}
+.bg-btn-sidebar {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.bg-btn-sidebar:hover {
+  background-color: rgba(7, 0, 23, 0.586);
+}
+.bg-modal {
+  background: rgba(0, 0, 0, 0.64);
+}
+.bg-grey-600{
+  background-color: #d9d9d9;
+}
+.bg-lightblue-active{
+  background-color: rgba(86, 106, 228, 0.2);
+}
+
+
+// Font Weights 
+.f-bold{
+  font-family: "amazon-ember-bold";
+}
+.f-light{
+  font-family: "amazon-ember-light";
+}
+.f-medium{
+  font-family: "amazon-ember";
+}
+
+/* Fonts */
+.font-small {
+  font-size: 14px;
+}
+.font-13{
+  font-size: 13px;
+}
+
+.font-md {
+  font-size: 18px;
+}
+
+.font-15 {
+  font-size: 15px;
+}
+.font-48 {
+  font-size: 48px;
+}
+.font-30{
+  font-size: 30px;
+}
+.font-10{
+  font-size: 10px;
+}
+.font-12{
+  font-size: 12px;
+}
+.font-23{
+  font-size: 23px;
+}
+.font-20{
+  font-size: 20px;
+}
+/* Margins and Padding */
+.mt-38 {
+  margin-top: 38px;
+}
+.mt-20{
+  margin-top: 20px;
+}
+.pt-65 {
+  padding-top: 65px;
+}
+.mb-60 {
+  margin-bottom: 60px;
+}
+.mb-185 {
+  margin-bottom: 185px;
+}
+.mb-112{
+  margin-bottom: 112px;
+}
+.mb-130{
+  margin-bottom: 130px;
+}
+.pd-1{
+  padding: 10px 30px;
+}
+.ml-60{
+  margin-left: 60px;
+}
+.ml-100{
+  margin-left: 100px;
+}
+.my-60{
+  margin: 65px 0px 85px;
+}
+.mt-85{
+  margin-top: 85px;
+}
+.mr-32{
+  margin-right: 32px;
+}
+.-mt-10{
+  margin-top: -10px;
+}
+.p-6 {
+  padding: 6px;
+}
+.p-20{
+  padding: 20px;
+}
+.pd-2 {
+  padding: 8px 16px;
+}
+.mt-72{
+  margin-top: 72px;
+}
+.pd-3{
+  padding: 10px 14px;
+}
+.ml-34{
+  margin-left: 34px
+}
+.-mt-5{
+  margin-top: -5px;
+}
+.mt-12{
+  margin-top: 12px;
+}
+.pr-70{
+  padding-right: 70px;
+}
+.mx-70{
+  margin-left: 70px;
+  margin-right: 70px
+}
+
+/* Sizes */
+.max-w-450 {
+  max-width: 450px;
+}
+.max-w-525{
+  max-width: 525px;
+}
+.max-w-1050{
+  max-width: 1050px;
+}
+.max-w-950{
+  max-width: 950px;
+}
+.max-w-850{
+  max-width: 850px;
+}
+.max-w-700{
+  max-width: 700px;
+}
+.w-350 {
+  width: 350px;
+}
+.w-255 {
+  width: 255px;
+}
+.w-74{
+  width: 74px;
+}
+.w-55{
+  width: 55px;
+}
+.w-101{
+  width: 101px;
+}
+.max-w-400{
+  max-width: 400px;
+}
+.h-50 {
+  height: 50px !important;
+}
+.h-40{
+  height: 40px;
+}
+.h-185 {
+  height: 185px;
+}
+.h-86{
+  height: 86px;
+}
+.h-130{
+  height: 130px;
+}
+.w-400{
+  width: 400px;
+}
+.w-171 {
+  width: 171px;
+}
+.w-164 {
+  width: 164px;
+}
+.w-190 {
+  width: 190px;
+}
+.max-w-190 {
+  min-width: 190px;
+}
+.w-300{
+  width: 300px;
+}
+.icon-80{
+  width: 80px;
+  height: 80px;
+}
+.h-450{
+  height: 450px;
+}
+.h-240{
+  height: 240px;
+}
+.h-270{
+  height: 270px;
+}
+.wp-63{
+  width: 63%;
+}
+.w-fill{
+  width: -webkit-fill-available;
+}
+.min-w-21{
+  min-width: 21px;
+}
+.h-70{
+  height: 70px;
+}
+.w-130{
+  width: 130px;
+}
+.h-120{
+  height: 120px;
+}
+.w-max{
+  width: max-content;
+}
+.wp-33{
+  width: 33%;
+}
+
+//Icons
+.icon-size{
+  width: 24px;
+  height: 24px;
+}
+.icon-40 {
+  width: 40px;
+  height: 40px;
+}
+.icon-36 {
+  height: 36px;
+  width: 36px;
+}
+.icon-32 {
+  height: 32px;
+  width: 32px;
+}
+.icon-20 {
+  height: 20px;
+  width: 20px;
+}
+
+
+/* Custom Styles */
+body {
+  font-family: "amazon-ember";
+  color: white;
+  line-height: 1;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+.pointer{
+  cursor: pointer;
+}
+
+.active {
+  color: $shadeblue;
+} 
+
+.bg-contact {
+  background-image: url("images/bg-contact.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  align-content: center;
+}
+
+.input-subscribe{
+  width: 360px;
+  padding: 16px 12px;
+  margin-right: 22px;
+  border-radius: 7px;
+  border: 2.5px solid #FFF;
+}
+.input-border{
+  border-radius: 5px;
+  border: 2px solid #566AE4;
+}
+.checkbox{
+  width: 22px;
+  accent-color: #bdbdbd;
+  height: 22px;
+  mix-blend-mode: darken;
+  cursor: pointer;
+}
+.checkvalid{
+  text-decoration: underline 2px red;
+  text-underline-position: under;
+}
+.us-logo {
+  border: solid #d9d9d9 0.5px;
+  border-radius: 5px;
+  padding: 4px 12px;
+  img {
+    width: 29px;
+    height: 29px;
+  }
+}
+
+.bankname::placeholder{
+  font-size: 10px;
+  text-transform: none;
+  opacity:  0.7;
+}
+.bankname{
+  padding: 4px;
+}
+.accnumber::placeholder{
+  font-size: 12px;
+  text-transform: none;
+  opacity: 0.7;
+}
+.pointer-none{
+  pointer-events: none;
+}
+.border-transparent{
+  border: transparent;
+}
+.gap-13 {
+  gap: 13px;
+}
+.bg-admin{
+  border-radius: 5px;
+  border: 2px solid rgba(217, 217, 217, 0.70);
+  background: #F4F2EF;
+}
+.img-330{
+  width: 330px;
+  height: 330px;
+}
+.rounded-50{
+  border-radius: 50%;
+}
+.errorpage{
+  height: 100vh;
+  border-radius: 5px;
+  border: 2px solid rgba(217, 217, 217, 0.70);
+  background: #F4F2EF;
+}
+@media (min-height: 1100px) {
+  .bg-contact {
+    height: 950px;
+  }
+}
+@media (min-width:1580px) {
+  .max-w-1050{
+    max-width: 1400px;
+  }
+}

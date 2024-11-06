@@ -1,0 +1,36 @@
+.home-bg {
+  background-color: #f4f2ef;
+  height: 546px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-cont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .content {
+      color: #24303f;
+      padding-right: 50px;
+      p {
+        font-size: 18px;
+        color: #24303f;
+      }
+      button {
+        background-color: #566ae4;
+        border-radius: 5px;
+        width: 255px;
+        height: 63px;
+        font-size: 23px;
+        color: white;
+      }
+    }
+    .home-img {
+      img {
+        width: 575px;
+        height: 383px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
