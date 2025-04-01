@@ -1,8 +1,22 @@
+import { useContext, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import trailer from "images/trailers.png";
 import ffp from "images/ffp.png";
 import "./HomeStyles.scss"
+import { AuthContext } from "../auth/AuthContext";
 
 const Home = () => {
+
+  const { user, authChecked } = useContext(AuthContext);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (authChecked && user) {
+      navigate("/admin");
+    }
+  }, [authChecked, user, navigate]);
+
+
   return (
     <div className="home-bg">
       <div className="max-w-1050 d-flex justify-content-center align-items-center mx-auto px-2">
